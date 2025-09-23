@@ -1,0 +1,118 @@
+\documentclass[a4paper]{article}
+
+\usepackage{times}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{chemfig}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0,6pt}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+
+\title{\Huge{Organische Chemie\\Lernzettel}}
+\date{\today}
+\author{Baden, Julian\\Gymnasium Mellendorf\\ABI Jahr 2027}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents \thispagestyle{empty}
+\newpage
+\pagenumbering{arabic}
+
+%________________________________________________________________________________________________
+
+
+\section{Stoffklassen}
+\subsection{Alkane}
+
+Alkane Sind eine Reihe \textbf{Kohlenstoffatome}, mit anliegenden
+\textbf{Wasserstoffatomen}. Die Reihe, welche die Alkane bilden, wenn man sie nach der Anzahl C-Atom
+ordnet, heißt "homologe Reihe"\\[0,5cm]
+\begin{center}
+\chemfig{H-C(-[:90]H)(-[:270]H)-C(-[:90]H)(-[:270]H)-H} \hspace{1cm} \textbf{Ethan}\\[0,5cm]
+\begin{tabular}{|c|c|c|}
+    \hline
+    Name        & Molekülformel          & Halbstrukturformel\\ \hline 
+    Methan      & \chemfig{C H_4}        & \chemfig{CH_3}\\
+    Ethan       & \chemfig{C_2 H_6}      & \chemfig{CH_3 - CH_3}\\
+    Propan      & \chemfig{C_3 H_8}      & \chemfig{CH_3 - CH_2 - CH_3}\\
+    Butan       & \chemfig{C_4 H_10}     & \chemfig{CH_3 - C_2 H_2 - CH_3}\\
+    Pentan      & \chemfig{C_5 H_12}     & \chemfig{CH_3 - C_3 H_4 - CH_3}\\
+    Hexan       & \chemfig{C_6 H_14}     & \chemfig{CH_3 - C_4 H_6 - CH_3}\\
+    Heptan      & \chemfig{C_7 H_16}     & \chemfig{CH_3 - C_5 H_8 - CH_3}\\
+    Octan       & \chemfig{C_8 H_18}     & \chemfig{CH_3 - C_6 H_{10} - CH_3}\\
+    Nonan       & \chemfig{C_9 H_20}     & \chemfig{CH_3 - C_7 H_{12} - CH_3}\\
+    Decan       & \chemfig{C_{10} H_22}  & \chemfig{CH_3 - C_8 H_{14} - CH_3}\\ \hline
+\end{tabular}\\[1cm]
+\end{center}
+
+Innehalb der Homologen Reihe sind folgende Zusammenhänge zu erkennen:\\
+\begin{itemize}
+    \item {Viskousität steigt}
+    \item {Siede- \& Schmelztemperatur steigt}
+    \item {Dichte nimmt zu} \\
+\end{itemize}
+Diese Zusammenhänge liegen an steigender Intensität von London- / Van-der-Waals-kräfte mit steigender Kettenlänge.\\[0,5cm]
+
+Alkane besitzen folgene Eigenschaften:\\
+\begin{itemize}
+    \item{keine elektrische Leitfähigkeit}
+    \item {sie sind unpolar}\\[1cm]
+\end{itemize}
+\newpage
+
+
+\subsection{Halogenalkane}
+
+Halogenalkane sind Alkane, denen durch \textbf{Elektrophile Addition}, aus Alkenen, oder durch
+\textbf{Radikale Substitution}, aus Alkanen, ein Halogen addiert wurde. \\
+
+\begin{center}
+    \chemfig{H-C(-[:90]H)(-[:270]Br)-C(-[:90]H)(-[:270]H)-H} \hspace{1cm} \textbf{Bromethan}\\[0,5cm]
+\end{center}
+
+Halogenalkane sind \textbf{lipophil}, ihre \textbf{Siedetemperatur ist höher als bei Alkanen}.
+Bei Mehrfachsubstutution / Mehrfachaddition werden die Halogenalkane \textbf{mit steigender Halogenanzahl reaktionsträger}.\\
+Wichtig bei Mehrfachsubstutution und Mehrfachaddition ist die Benennung mit cis- und trans-.\\
+\begin{center}
+    \chemfig{H-C(-[:90]H)(-[:270]Br)-C(-[:90]Br)(-[:270]H)-H} \hspace{1cm} \textbf{Trans-1,2-dibromethan}\\[0,5cm]
+    \chemfig{H-C(-[:90]H)(-[:270]Br)-C(-[:90]H)(-[:270]Br)-H} \hspace{1cm} \textbf{Cis-1,2-dibromethan}\\[0,5cm]
+\end{center}
+
+Eine Nachweisreaktion für Halogenalkane ist die Beilsteinprobe.
+
+\subsection{Alkene \& Alkine}
+
+Alkene sind Kohlenwasserstoffe, welche eine Doppelbindung zwischen zwei C-Atomen besitzen.
+Sie wie die Alkane benannt, besitzen aber eine \textbf{-en} Endung. Vor dieser Endung wird die Stelle der Mehrfachbindung geschrieben,
+z.B.: Pent-2-en.\\
+
+\begin{center}
+    \chemfig{C (-[:240]H)(-[:120]H) = C (-[:60]H)(-[:300]H)} \hspace{1cm} \textbf{Ethen}\\[0,5cm]
+\end{center}
+
+
+Alkine bekommen hingegen die Ändung \textbf{-in}.\\
+
+\begin{center}
+    \chemfig{H - C ~ C - H} \hspace{1cm} \textbf{Ethin}\\[0,5cm]
+\end{center}
+
+Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser.
+
+
+\subsection{Alkohole}
+
+Alkohole sind Moleküle mit einer O-H-Gruppe (Hydroxygruppe). 
+
+
+\end{document}
