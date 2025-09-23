@@ -1,6 +1,6 @@
-PWD c:\0_tex\0_Schule\Organische Chemie
+PWD c:\0_GitHub\Chemie-Uebersicht-Organik
 INPUT C:\Users\julia\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\0_tex\0_Schule\Organische Chemie\Organische Chemie.tex
+INPUT c:\0_GitHub\Chemie-Uebersicht-Organik\Organische Chemie.tex
 OUTPUT Organische Chemie.log
 INPUT C:\Users\julia\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\julia\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
