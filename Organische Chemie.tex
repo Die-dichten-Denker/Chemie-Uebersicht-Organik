@@ -31,6 +31,46 @@
 %________________________________________________________________________________________________
 
 
+\section{Stöchiometrie}
+Stöchiometrie, auch chemisches Rechnen, ist ein Werkzeug der Chemie, mit welchen man Stoffmengen verhältnisse
+nutzen kann, um zum Beispiel Produktmengen oder Volumen zu errechnen.
+\subsection{Größen}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+    \hline
+    Größe       &Symbol     &Einheit \\\hline
+    Atomanzahl  &$N$        &-- \\ 
+    Avogrado-Konstante &$N_a$ &$mol^{-1}$ \\
+    Stoffmenge &$n$ &$mol$ \\
+    Masse &$m$ &$kg$ \\
+    Molare Masse &$M$ &$kg \cdot mol^{-1}$ \\
+    Volumen &$V$ &$l$ \\
+    Molares Volumen &$V_m$ &$l \cdot mol^{-1}$\\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Formeln}
+\Large
+\begin{eqnarray}
+    n &= \dfrac{N}{N_a} \\ [5mm]
+    n &= \dfrac{m}{M} \\ [5mm]
+    n &= \dfrac{V}{V_m}
+\end{eqnarray}
+\normalsize
+
+\subsection{Standartbedinungen und Normbedingungen}
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Größen &Standartbedingungen &Normbedingungen \\\hline
+        Temperatur &$298\;K = 25\;C$ &$273\;K = 0\;C$ \\
+        Druck &$1000 \; hPa$ &$1013 \; hPa$ \\
+        Molares Volumen &$V_m = 24 \; l \cdot mol^{-1}$ &$V_{mn} = 22,4 \; l \cdot mol^{-1}$ \\\hline
+    \end{tabular}
+\end{center}
+
+\newpage
+
 \section{Stoffklassen}
 \subsection{Alkane}
 
@@ -68,7 +108,6 @@ Alkane besitzen folgene Eigenschaften:\\
     \item{keine elektrische Leitfähigkeit}
     \item {sie sind unpolar}\\[1cm]
 \end{itemize}
-\newpage
 
 
 \subsection{Halogenalkane}
@@ -104,8 +143,8 @@ Alkine bekommen hingegen die Ändung \textbf{-in}.\\
 
 Wichtig bei Mehrfachsubstutution und Mehrfachaddition ist die Benennung mit cis- und trans-.\\
 \begin{center}
-    \chemfig{H-C(-[:90]H)(-[:270]Br)=C(-[:90]Br)(-[:270]H)-H} \hspace{1cm} \textbf{Trans-1,2-dibromethen}\\[0,5cm]
-    \chemfig{H-C(-[:90]H)(-[:270]Br)=C(-[:90]H)(-[:270]Br)-H} \hspace{1cm} \textbf{Cis-1,2-dibromethen}\\[0,5cm]
+    \chemfig{H-C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})=C(-[:90]\charge{0=\|,180=\|,90=---}{Br})(-[:270]H)-H} \hspace{1cm} \textbf{Trans-1,2-dibromethen}\\[0,5cm]
+    \chemfig{H-C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})=C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})-H} \hspace{1cm} \textbf{Cis-1,2-dibromethen}\\[0,5cm]
 \end{center}
 
 Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser.
