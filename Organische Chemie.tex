@@ -283,17 +283,22 @@ Diese ist bimolekular und Zweischrittig.
         \schemestart
             \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}}
         \schemestop \\ [5mm]
-        Das Halogenmolekül wird \emph{polarisiert} \\ [5mm]
+        Das Halogenmolekül wird von der Doppelbindung \emph{polarisiert}: Es bildet sich der $\pi$-Komplex. \\ [5mm]
         \schemestart
-            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])}
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}^{\delta -}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}^{\; \delta +}}
+        \schemestop \\ [5mm]
+        \newpage
+        Durch die heterolytische Spaltung des Halogenmoleküls bildet sich der $\sigma$-Komplex. \\ [5mm]
+        \schemestart
+            \chemfig{[:-30]C(-[:240])(-[:120])*3(-\quad\charge{0=\|,-90=\|,-180=\|}{\ce{X}}^{\;\oplus}-C (-[:60])(-[:300])-)} \quad+\quad \chemfig{\charge{0=\|,90=\|,180=\|,270=\|}{\ce{Br}}^{\;\ominus}}
         \schemestop \\ [5mm]
         \end{center}
     \item Schritt\\
         \begin{center}
+        Nun greift das Halogenid von der Rückseite an. \\ [5mm]
         \schemestart
-            \chemfig{\phantom{Q}- \ce{C^+} (-[90]) (-[-90])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{O^-}} - H} \arrow
-            \chemfig{\phantom{Q}- C (-[90]) (-[-90]) - \charge{90=\|,-90=\|}{O} - H}
-        \schemestop
+            \chemfig{[:-30]C(-[:240])(-[:120])*3(-\quad\charge{0=\|,-90=\|,-180=\|}{\ce{X}}^{\;\oplus}-C (-[:60])(-[:300])-)}
+        \schemestop \\ [5mm]
         \end{center}
 \end{enumerate}
 \end{document}
