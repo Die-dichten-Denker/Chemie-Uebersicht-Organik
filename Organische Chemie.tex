@@ -162,7 +162,7 @@ Wichtig bei Mehrfachsubstutution und Mehrfachaddition ist die Benennung mit cis-
     \chemfig{H-C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})=C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})-H} \hspace{1cm} \textbf{Cis-1,2-dibromethen}\\[0,5cm]
 \end{center}
 
-Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser.
+Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser. Der typische Reaktionsmechanismus der Alkene ist die elektrophile Addition.
 
 
 \subsection{Alkohole}
@@ -274,8 +274,26 @@ Bei der $SN_1$ bestimmt der erste Schritt die Geschwindigkeit.\\\\
 \end{enumerate}
 
 \subsection{Elektrophile Addition}
+Bei einer elektrophile Addition lagern sich Elektrophile an die Doppelbindungen ungesättigter Moleküle.
+Diese ist bimolekular und Zweischrittig.
 
-
-
-
+\begin{enumerate}
+    \item Schritt\\
+        \begin{center}
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}}
+        \schemestop \\ [5mm]
+        Das Halogenmolekül wird \emph{polarisiert} \\ [5mm]
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])}
+        \schemestop \\ [5mm]
+        \end{center}
+    \item Schritt\\
+        \begin{center}
+        \schemestart
+            \chemfig{\phantom{Q}- \ce{C^+} (-[90]) (-[-90])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{O^-}} - H} \arrow
+            \chemfig{\phantom{Q}- C (-[90]) (-[-90]) - \charge{90=\|,-90=\|}{O} - H}
+        \schemestop
+        \end{center}
+\end{enumerate}
 \end{document}
