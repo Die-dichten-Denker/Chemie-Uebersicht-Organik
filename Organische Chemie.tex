@@ -6,7 +6,6 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{graphicx}
-
 \usepackage{chemfig}
 \usepackage{mhchem}
 \usepackage{fancyhdr}
@@ -163,7 +162,7 @@ Wichtig bei Mehrfachsubstutution und Mehrfachaddition ist die Benennung mit cis-
     \chemfig{H-C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})=C(-[:90]H)(-[:270]\charge{0=\|,180=\|,270=\_}{Br})-H} \hspace{1cm} \textbf{Cis-1,2-dibromethen}\\[0,5cm]
 \end{center}
 
-Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser.
+Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser. Der typische Reaktionsmechanismus der Alkene ist die elektrophile Addition.
 
 
 \subsection{Alkohole}
@@ -269,9 +268,37 @@ Bei der $SN_1$ bestimmt der erste Schritt die Geschwindigkeit.\\\\
 \end{center}
 
 
+\subsection{Elektrophile Addition}
+Bei einer elektrophile Addition lagern sich Elektrophile an die Doppelbindungen ungesättigter Moleküle.
+Diese ist bimolekular und Zweischrittig.
 
-
-
-
-
+\begin{enumerate}
+    \item Schritt\\
+        Man starte mit folgenden Edukten:\\ [5mm]
+        \begin{center}
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}}
+        \schemestop \\ [5mm]
+        \end{center}
+        Das Halogenmolekül wird von der Doppelbindung \emph{polarisiert}: Es bildet sich der $\pi$-Komplex. \\ [5mm]
+        \begin{center}
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}^{\delta -}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}^{\; \delta +}}
+        \schemestop \\ [5mm]
+        \newpage
+        \end{center}
+        Durch die heterolytische Spaltung des Halogenmoleküls bildet sich der $\sigma$-Komplex. \\ [5mm]
+        \begin{center}
+        \schemestart
+            \chemfig{[:-30]C(-[:240])(-[:120])*3(-\quad\charge{0=\|,-90=\|,-180=\|}{\ce{X}}^{\;\oplus}-C (-[:60])(-[:300])-)} \quad+\quad \chemfig{\charge{0=\|,90=\|,180=\|,270=\|}{\ce{X}}^{\;\ominus}}
+        \schemestop \\ [5mm]
+        \end{center}
+    \item Schritt\\
+        Nun greift das Halogenid von der Rückseite an. Es ensteht folgendes Produkt:\\ [5mm]
+        \begin{center}
+        \schemestart
+            \chemfig{-C ([:90]-\charge{0=\|,90=\|,180=\|}{\ce{X}})  ([:270]-) - C ([:270]-\charge{0=\|,270=\|,180=\|}{\ce{X}})  ([:90]-) -}
+        \schemestop \\ [5mm]
+        \end{center}
+\end{enumerate}
 \end{document}
