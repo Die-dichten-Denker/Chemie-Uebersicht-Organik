@@ -9,6 +9,7 @@
 \usepackage{authblk}
 \usepackage{chemfig}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0,6pt}
@@ -51,11 +52,11 @@ nutzen kann, um zum Beispiel Produktmengen oder Volumen zu errechnen.
 
 \subsection{Formeln}
 \Large
-\begin{eqnarray}
+\begin{eqnarray*}
     n &= \dfrac{N}{N_a} \\ [5mm]
     n &= \dfrac{m}{M} \\ [5mm]
     n &= \dfrac{V}{V_m}
-\end{eqnarray}
+\end{eqnarray*}
 \normalsize
 
 \subsection{Standartbedinungen und Normbedingungen}
@@ -153,7 +154,65 @@ Eine Nachweisreaktion für Mehrfachbindungen ist die Entfärbung von Bromwasser.
 \subsection{Alkohole}
 
 Alkohole sind Moleküle mit einer O-H-Gruppe (Hydroxygruppe). Sie entstehen durch die
-\textbf{nucleophile Substitution} von Halogenalkanen.
-Dlol kek
+\textbf{nucleophile Substitution} von Halogenalkanen, \textbf{Hydratisierung von Alkenen}
+
+
+
+
+
+
+
+
+\section{Reaktionsarten}
+\subsection{Radikalische Substitution ($S_R$)}
+
+Die Radikalische Substitution läuft in drei Schritten ab:\\
+
+\begin{enumerate}
+    \item Ein Halogenmolekül wird homolytisch (=in zwei gleiche Teile) in zwei Radikale, mit jeweils einem freien Elektron \textbf{gespalten}.
+         \begin{center}
+            \schemestart
+                \chemfig{\charge{-180=\|,-90=\|,90=\|}{X} - \charge{0=\|,-90=\|,90=\|}{X}} \quad $\xrightarrow{Energie}$ \quad
+                \charge{-180=\|,-90=\|,90=\|,0=\.}{X} \quad + \quad \charge{0=\|,-90=\|,90=\|,-180=\.}{X}
+            \schemestop
+        \end{center}
+    \item Eines dieser Halogenradikale greift ein \textbf{H-Atom} des Kohlenwasserstoffs an und \textbf{spaltet} dieses \textbf{ab}. Es bildet sich ein Halogenwasserstoff und eine Kohlenwasserstoffradikal.
+    \item Es sind mehrere \textbf{Rekombinationsreaktionen} möglich:
+        \begin{enumerate}
+            \item Es reagieren ein Halogenradikal und ein Kohlenwasserstoffradikal zu einem Halogenkohlenwasserstoff.\\
+                \begin{center}
+                \schemestart
+                    \charge{-180=\|,-90=\|,90=\|,0=\.}{X} \quad + \quad \chemfig{ \charge{-180=\.}{C} (-[90]) (-[-90]) - } \arrow
+                    \chemfig{ \charge{-180=\|,-90=\|,90=\|}{X} - C (-[90]) (-[-90]) - }
+                \schemestop
+                \end{center}
+            \item Es reagieren zwei Kohlenwasserstoffradikale miteinander, wobei ein einzelnes Kohlenwasserstoffmolekül aus der Summe beider entsteht.
+                \begin{center}
+                \schemestart
+                    \chemfig{\phantom{R}-\charge{0=\.}{C} (-[90]) (-[-90])} \quad + \quad \chemfig{ \charge{-180=\.}{C} (-[90]) (-[-90]) - } \arrow
+                    \chemfig{\phantom{R}-C (-[90]) (-[-90]) - C (-[90]) (-[-90])-}
+                \schemestop
+                \end{center}
+            \item Es reagieren zwei freien Halogenradikale miteinander, wobei ein Halogenmolekül entsteht und ein Kohlenwasserstoffradikal zurückbleibt.
+                \begin{center}
+                \schemestart
+                    \charge{-180=\|,-90=\|,90=\|,0=\.}{X} \quad + \quad \charge{0=\|,-90=\|,90=\|,-180=\.}{X} \arrow
+                    \chemfig{\charge{-180=\|,-90=\|,90=\|}{X} - \charge{0=\|,-90=\|,90=\|}{X}}
+                \schemestop
+                \end{center}
+        \end{enumerate}
+\end{enumerate}
+
+
+
+               
+
+
+
+
+
+
+
+
 
 \end{document}
