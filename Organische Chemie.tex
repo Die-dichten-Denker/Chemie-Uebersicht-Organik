@@ -271,7 +271,7 @@ Bei der $SN_1$ bestimmt der erste Schritt die Geschwindigkeit.\\\\
 \begin{center}
     \schemestart
         \chemfig{H-\charge{90=\|,-90=\|,0=\|}{\ce{O^-}}} \quad + \quad \chemfig{\phantom{Q}- C (-[90]) (-[-90]) - \charge{0=\|,-90=\|,90=\|}{X}} \arrow
-        \chemfig{H - \charge{90=\|,-90=\|}{\ce{O^\delta-}} - C (-[1]) (-[3]) (-[-90]) - \charge{0=\|,-90=\|,90=\|}{\ce{X^\delta-}}} \arrow
+        \chemfig{H - \charge{90=\|,-90=\|}{\ce{O^\delta-}} -[,,,,dash pattern=on 3pt off 3pt] C (-[1]) (-[3]) (-[-90]) -[,,,,dash pattern=on 3pt off 3pt] \charge{0=\|,-90=\|,90=\|}{\ce{X^\delta-}}} \arrow
     \schemestop
     \\[0,5cm]
     \schemestart
@@ -330,7 +330,7 @@ Dadurch entsteht zwischen den beiden C-Atomen eine Mehrfachbindung.\\
 In folgenden Beispielen werden von einem Halogenalkan mit Hilfe eines Hydroxid-Ions ein Halogen- und ein H-Atom abgespalten.\\
 
 \subsubsection{$E1$}
-Die $E1$ Reaktion verläuft, wie auch die $S_N1$ Reaktion monomolekular in zwei Schritten.\\
+Die $E1$ Reaktion verläuft, wie auch die $S_N1$ Reaktion, monomolekular in zwei Schritten.\\
 \begin{enumerate}
     \item Schritt\\
         Ein Halogen wird abgespalten.
@@ -351,10 +351,24 @@ Die $E1$ Reaktion verläuft, wie auch die $S_N1$ Reaktion monomolekular in zwei 
         \begin{center}
             \schemestart
                 \chemfig{C(-[3])(-[5]) = C(-[-90]) - C(-[90])(-[-90])(-[0])} \quad+\quad \chemfig{\charge{45=\|,135=\|}{O}(-[5]H)(-[7]H)}
-            \schemestop
+            \schemestop \\ [5mm]
         \end{center}
 \end{enumerate}
 
+
+\subsubsection{$E2$}
+Die $E2$ Reaktion verläuft, wie die $SN_2$ Reaktion, bimolekular in einem Schritt.\\
+
+
+Ein Nukleophil greift ein Proton an und spaltet dieses ab.
+\begin{center}
+\schemestart
+    \chemfig{H - \charge{-180=\|,90=\|,-90=\|}{O}} \quad+\quad \chemfig{}
+\schemestop \\ [5mm]
+\end{center}
+
+Dadurch bildet das zurückgebliebene Elektronenpaar eine C=C-Doppelbindung und das
+Halogen des anderen C-Atoms wird abgespalten.
 
 
 
