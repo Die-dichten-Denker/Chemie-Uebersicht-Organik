@@ -323,6 +323,45 @@ Diese ist bimolekular und Zweischrittig.
         \end{center}
 \end{enumerate}
 
+
+\subsection{Eleminierungsreaktion}
+Bei der Eleminierungsreaktion werden zwei Atome oder Atomgruppen von benachbarten C-Atomen abgespalten ohne, dass diese durch irgentwas ersetzt werden.
+Dadurch entsteht zwischen den beiden C-Atomen eine Mehrfachbindung.\\
+In folgenden Beispielen werden von einem Halogenalkan mit Hilfe eines Hydroxid-Ions ein Halogen- und ein H-Atom abgespalten.\\
+
+\subsubsection{$E1$}
+Die $E1$ Reaktion verläuft, wie auch die $S_N1$ Reaktion monomolekular in zwei Schritten.\\
+\begin{enumerate}
+    \item Schritt\\
+        Ein Halogen wird abgespalten.
+        \begin{center}
+        \schemestart
+            \chemfig{H-C(-[90])(-[-90])-C(-[90]\charge{90=\|,-180=\|,0=\|}{Br})(-[-90])-C(-[90])(-[-90])(-[0])}
+        \schemestop \\ [5mm]
+        \end{center}
+        Es entsteht ein Carbeniumion, welches vom +I-Effekt der benachbarten C-Atome stabilisiert wird, und ein Halogenid.
+        \begin{center}
+            \schemestart
+                \chemfig{H-C(-[90])(-[-90])-C^{\;\oplus}(-[-90])-C(-[90])(-[-90])(-[0])} \quad+\quad \chemfig{\charge{0=\|,90=\|,-90=\|,-180=\|}{Br}^{\;\ominus}}
+            \schemestop \\ [5mm]
+        \end{center}
+    \item Schritt\\
+        Das Nukleophil (Hydroxid-Ion) greift ein H-Atom an und spaltet dieses ab. Das Elektronenpaar zwischen H- und C-Atom bildet eine Doppelbindung
+        zwischen diesem C-Atom und dem, von welchem das Halogen abgespalten wurde. Das entstehende Kohlenwasserstoff ist ein Alken.
+        \begin{center}
+            \schemestart
+                \chemfig{C(-[3])(-[5]) = C(-[-90]) - C(-[90])(-[-90])(-[0])} \quad+\quad \chemfig{\charge{45=\|,135=\|}{O}(-[5]H)(-[7]H)}
+            \schemestop
+        \end{center}
+\end{enumerate}
+
+
+
+
+
+
+
+
 \section{Säuren und Basen nach Brønsted}
 Der dänische Chemiker \emph{Brønsted} definierte die \textbf{Brønsted-Säure} als Moleküle oder Ionen, die bei
 einer Reaktion Protonen an einen Reaktionspartner abgeben. Deshalb sind diese also \textbf{Protonen-Donatoren}.
@@ -348,5 +387,11 @@ Wasser kann nicht nur als Base mit einer Säure reagieren, sondern auch als Säu
 \end{center}
 Alkalische Lösungen sind von den \textbf{Hydroxid-Ionen}(\ce{OH^$\ominus$}) charakterisiert und enthalten auch Baserest-Ionen (hier: \ce{NH_4^$\oplus$}).
 Säuren und Basen reagieren zusammen zu Wasser und den jeweiligen Rest-Ionen.
+
+
+
+
+
+
 
 \end{document}
