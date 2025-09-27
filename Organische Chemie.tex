@@ -72,6 +72,49 @@ nutzen kann, um zum Beispiel Produktmengen oder Volumen zu errechnen.
 
 \newpage
 
+
+\section{Grundlegende Begriffe}
+\subsection{Säuren und Basen nach Brønsted}
+Der dänische Chemiker \emph{Brønsted} definierte die \textbf{Brønsted-Säure} als Moleküle oder Ionen, die bei
+einer Reaktion Protonen an einen Reaktionspartner abgeben. Deshalb sind diese also \textbf{Protonen-Donatoren}.
+
+\textbf{Brønsted-Basen} sind definiert als Moleküle oder Ionen, welche bei einer Reaktion von einen Reaktionspartner Protonen aufnehmen.
+Diese sind daher \textbf{Protonen-Akzeptoren}.
+
+Aus der Definition Brønsteds geht hervor das eine Base imme mit einer Säure zusammen reagiert. Diese Reaktion nennt
+man \textbf{Säure-Base-Reaktion}. Ein Beispiel für eine Säure-Base-Reaktion ist die Reaktion zwischen Salzsäure und
+Wasser.
+\begin{center}
+\schemestart
+\chemname{\ce{HCl}}{\emph{Säure}} \quad+\quad \chemname{\ce{H_2O}}{\emph{Base}} \arrow{<->} \chemname{\ce{Cl^$\ominus$}}{\emph{Base}} \quad+\quad\chemname{\ce{H_3O^$\oplus$}}{\emph{Säure}}
+\schemestop    
+\end{center}
+Zu erkennen ist das saure Lösungen immer \textbf{Oxonium-Ionen} (\ce{H_3O^$\oplus$}) und Säurerest-Ionen (hier: \ce{Cl^$\ominus$}) enthalten. 
+
+Wasser kann nicht nur als Base mit einer Säure reagieren, sondern auch als Säure mit einer Base. Betrachten wir nun die Reaktion zwischen Wasser und Ammoniak:
+\begin{center}
+\schemestart
+\chemname{\ce{NH_3}}{\emph{Base}} \quad+\quad \chemname{\ce{H_2O}}{\emph{Säure}} \arrow{<->} \chemname{\ce{NH_4^$\oplus$}}{\emph{Säure}} \quad+\quad\chemname{\ce{OH^$\ominus$}}{\emph{Base}}
+\schemestop    
+\end{center}
+Alkalische Lösungen sind von den \textbf{Hydroxid-Ionen}(\ce{OH^$\ominus$}) charakterisiert und enthalten auch Baserest-Ionen (hier: \ce{NH_4^$\oplus$}).
+Säuren und Basen reagieren zusammen zu Wasser und den jeweiligen Rest-Ionen.
+
+
+\subsection{Nucleophile und Elektrophile}
+\paragraph{Nucleophile} 
+Teilchen sind \textbf{negativ} geladenen Ionen oder Moleküle mit \textbf{Elektronenüberschuss}, zum Beispiel freie Elektronenpaare (Elektronendonatoren).
+Sie greifen den Reaktionspartner an Stellen \textbf{niedriger Elektronendichte}, also im Bereich positiver Ladung oder Partialladung an.
+
+Die Stärke eines Nucleophils hängt erstens von seiner \textbf{Ladung} ab, je negativer, desto stärker, und zweitens von seiner
+\textbf{Polarisierbarkeit}, welche proportional mit der Größe des Teilchens ist. Das heißt: Je größer das Teilchen, desto besser
+kann es polarisiert werden. Ob eine Abgangsgruppe gut oder schlechter ist, ist Analog.
+
+\paragraph{Elektrophile} Teilchen sind Ionen oder Moleküle mit \textbf{Elektronenmangel} beziehungsweise \textbf{Elektronenlücken} (Elektronenakzeptoren).
+Sie greifen den Reaktionspartner an Stellen \textbf{hoher Elektronendichte}, also im Bereich negativer Ladung oder Partialladung an.
+
+
+
 \section{Stoffklassen}
 \subsection{Alkane}
 
@@ -172,23 +215,9 @@ Alkohole sind Moleküle mit einer O-H-Gruppe (Hydroxygruppe). Sie entstehen durc
 
 
 
-
-
-
-
 \section{Reaktionsarten}
 
-\subsection{Nucleophile und Elektrophile}
-\paragraph{Nucleophile} 
-Teilchen sind \textbf{negativ} geladenen Ionen oder Moleküle mit \textbf{Elektronenüberschuss}, zum Beispiel freie Elektronenpaare (Elektronendonatoren).
-Sie greifen den Reaktionspartner an Stellen \textbf{niedriger Elektronendichte}, also im Bereich positiver Ladung oder Partialladung an.
 
-Die Stärke eines Nucleophils hängt erstens von seiner \textbf{Ladung} ab, je negativer, desto stärker, und zweitens von seiner
-\textbf{Polarisierbarkeit}, welche proportional mit der Größe des Teilchens ist. Das heißt: Je größer das Teilchen, desto besser
-kann es polarisiert werden. Ob eine Abgangsgruppe gut oder schlechter ist, ist Analog.
-
-\paragraph{Elektrophile} Teilchen sind Ionen oder Moleküle mit \textbf{Elektronenmangel} beziehungsweise \textbf{Elektronenlücken} (Elektronenakzeptoren).
-Sie greifen den Reaktionspartner an Stellen \textbf{hoher Elektronendichte}, also im Bereich negativer Ladung oder Partialladung an.
 
 \subsection{Radikalische Substitution ($S_R$)}
 
@@ -290,38 +319,6 @@ Nucleophils abhängig. \\
 \end{tabular}
 \end{center}
 
-\subsection{Elektrophile Addition}
-Bei einer elektrophile Addition lagern sich Elektrophile an die Doppelbindungen ungesättigter Moleküle.
-Diese ist bimolekular und Zweischrittig.
-
-\begin{enumerate}
-    \item Schritt\\
-        Man starte mit folgenden Edukten:\\ 
-        \begin{center}
-        \schemestart
-            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}}
-        \schemestop \\ [5mm]
-        \end{center}
-        Das Halogenmolekül wird von der Doppelbindung \emph{polarisiert}: Es bildet sich der $\pi$-Komplex. \\ 
-        \begin{center}
-        \schemestart
-            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}^{\delta -}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}^{\; \delta +}}
-        \schemestop \\ [5mm]
-        \end{center}
-        Durch die heterolytische Spaltung des Halogenmoleküls bildet sich der $\sigma$-Komplex. \\
-        \begin{center}
-        \schemestart
-            \chemfig{[:-30]C(-[:240])(-[:120])*3(-\quad\charge{0=\|,-90=\|,-180=\|}{\ce{X}}^{\;\oplus}-C (-[:60])(-[:300])-)} \quad+\quad \chemfig{\charge{0=\|,90=\|,180=\|,270=\|}{\ce{X}}^{\;\ominus}}
-        \schemestop \\ [5mm]
-        \end{center}
-    \item Schritt\\
-        Nun greift das Halogenid von der Rückseite an. Es ensteht folgendes Produkt:\\
-        \begin{center}
-        \schemestart
-            \chemfig{-C ([:90]-\charge{0=\|,90=\|,180=\|}{\ce{X}})  ([:270]-) - C ([:270]-\charge{0=\|,270=\|,180=\|}{\ce{X}})  ([:90]-) -}
-        \schemestop 
-        \end{center}
-\end{enumerate}
 
 
 \subsection{Eleminierungsreaktion}
@@ -374,40 +371,45 @@ Dadurch bildet das zurückgebliebene Elektronenpaar eine C=C-Doppelbindung und d
 \schemestop \\ [5mm]
 \end{center}
 
-Die E2 Reaktion wird bei einer starken Base favorisiert, da diese nicht auf die Abspaltung der Abgangsgruppe warten muss.
+Die $E2$ Reaktion wird bei einer starken Base favorisiert, während die $E1$ eher bei schwachen Basen stattfindet.
 
 
 
-
-\section{Säuren und Basen nach Brønsted}
-Der dänische Chemiker \emph{Brønsted} definierte die \textbf{Brønsted-Säure} als Moleküle oder Ionen, die bei
-einer Reaktion Protonen an einen Reaktionspartner abgeben. Deshalb sind diese also \textbf{Protonen-Donatoren}.
-
-\textbf{Brønsted-Basen} sind definiert als Moleküle oder Ionen, welche bei einer Reaktion von einen Reaktionspartner Protonen aufnehmen.
-Diese sind daher \textbf{Protonen-Akzeptoren}.
-
-Aus der Definition Brønsteds geht hervor das eine Base imme mit einer Säure zusammen reagiert. Diese Reaktion nennt
-man \textbf{Säure-Base-Reaktion}. Ein Beispiel für eine Säure-Base-Reaktion ist die Reaktion zwischen Salzsäure und
-Wasser.
-\begin{center}
-\schemestart
-\chemname{\ce{HCl}}{\emph{Säure}} \quad+\quad \chemname{\ce{H_2O}}{\emph{Base}} \arrow{<->} \chemname{\ce{Cl^$\ominus$}}{\emph{Base}} \quad+\quad\chemname{\ce{H_3O^$\oplus$}}{\emph{Säure}}
-\schemestop    
-\end{center}
-Zu erkennen ist das saure Lösungen immer \textbf{Oxonium-Ionen} (\ce{H_3O^$\oplus$}) und Säurerest-Ionen (hier: \ce{Cl^$\ominus$}) enthalten. 
-
-Wasser kann nicht nur als Base mit einer Säure reagieren, sondern auch als Säure mit einer Base. Betrachten wir nun die Reaktion zwischen Wasser und Ammoniak:
-\begin{center}
-\schemestart
-\chemname{\ce{NH_3}}{\emph{Base}} \quad+\quad \chemname{\ce{H_2O}}{\emph{Säure}} \arrow{<->} \chemname{\ce{NH_4^$\oplus$}}{\emph{Säure}} \quad+\quad\chemname{\ce{OH^$\ominus$}}{\emph{Base}}
-\schemestop    
-\end{center}
-Alkalische Lösungen sind von den \textbf{Hydroxid-Ionen}(\ce{OH^$\ominus$}) charakterisiert und enthalten auch Baserest-Ionen (hier: \ce{NH_4^$\oplus$}).
-Säuren und Basen reagieren zusammen zu Wasser und den jeweiligen Rest-Ionen.
+\subsection{Wann findet eine $E$, wann eine $S_N$ Reaktion statt?}
 
 
+\subsection{Elektrophile Addition}
+Bei einer elektrophile Addition lagern sich Elektrophile an die Doppelbindungen ungesättigter Moleküle.
+Diese ist bimolekular und Zweischrittig.
 
-
+\begin{enumerate}
+    \item Schritt\\
+        Man starte mit folgenden Edukten:\\ 
+        \begin{center}
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}}
+        \schemestop \\ [5mm]
+        \end{center}
+        Das Halogenmolekül wird von der Doppelbindung \emph{polarisiert}: Es bildet sich der $\pi$-Komplex. \\ 
+        \begin{center}
+        \schemestart
+            \chemfig{C (-[:240])(-[:120]) = C (-[:60])(-[:300])} \quad + \quad \chemfig{\charge{90=\|,-90=\|,-180=\|}{\ce{X}}^{\delta -}-\charge{90=\|,-90=\|,0=\|}{\ce{X}}^{\; \delta +}}
+        \schemestop \\ [5mm]
+        \end{center}
+        Durch die heterolytische Spaltung des Halogenmoleküls bildet sich der $\sigma$-Komplex. \\
+        \begin{center}
+        \schemestart
+            \chemfig{[:-30]C(-[:240])(-[:120])*3(-\quad\charge{0=\|,-90=\|,-180=\|}{\ce{X}}^{\;\oplus}-C (-[:60])(-[:300])-)} \quad+\quad \chemfig{\charge{0=\|,90=\|,180=\|,270=\|}{\ce{X}}^{\;\ominus}}
+        \schemestop \\ [5mm]
+        \end{center}
+    \item Schritt\\
+        Nun greift das Halogenid von der Rückseite an. Es ensteht folgendes Produkt:\\
+        \begin{center}
+        \schemestart
+            \chemfig{-C ([:90]-\charge{0=\|,90=\|,180=\|}{\ce{X}})  ([:270]-) - C ([:270]-\charge{0=\|,270=\|,180=\|}{\ce{X}})  ([:90]-) -}
+        \schemestop 
+        \end{center}
+\end{enumerate}
 
 
 
