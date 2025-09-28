@@ -9,6 +9,7 @@
 \usepackage{chemfig}
 \usepackage{mhchem}
 \usepackage{fancyhdr}
+\usepackage{longtable}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0,6pt}
@@ -111,6 +112,18 @@ kann es polarisiert werden. Ob eine Abgangsgruppe gut oder schlechter ist, ist A
 
 \paragraph{Elektrophile} Teilchen sind Ionen oder Moleküle mit \textbf{Elektronenmangel} beziehungsweise \textbf{Elektronenlücken} (Elektronenakzeptoren).
 Sie greifen den Reaktionspartner an Stellen \textbf{hoher Elektronendichte}, also im Bereich negativer Ladung oder Partialladung an.
+
+\subsection{Typische Ionen}
+Manche Ionen kommen in der Organik häufig vor. Die Wichtigsten und wie sie heißen ist im folgenden zu finden:
+\begin{center}
+    \begin{longtable}{c c c}
+        Oxoniumion &\ce{H_3O^$\oplus$} &\chemfig{H-\charge{90=\|}{\ce{O}}^{\oplus}(-[:270]H)-H} \\[15mm]
+        Hydroxidion &\ce{OH} &\chemfig{H-\charge{0=\|,90=\|,270=\|}{O}^{\;\ominus}}\\ [15mm]
+        Primäres Carbokation &-- &\chemfig{R-C^{\oplus}(-[:270]H)-H} \\[15mm]
+        Sekundäres Carbokation &-- &\chemfig{R-C^{\oplus}(-[:270]H)-R} \\[15mm]
+        Tertiäres Carbokation &-- &\chemfig{R-C^{\oplus}(-[:270]R)-R} 
+    \end{longtable}
+\end{center}
 
 \section{Nachweisreaktion}
 \begin{center}
