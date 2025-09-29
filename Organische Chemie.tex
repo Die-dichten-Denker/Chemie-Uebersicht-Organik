@@ -17,6 +17,10 @@
 \fancyhead[L]{\leftmark}
 \fancyhead[R]{\thepage}
 
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
 \title{\Huge{Organische Chemie\\Lernzettel}}
 \date{\today}
 \author{\quad\\Baden, Julian\\Hagemann, Florian\\\\Gymnasium Mellendorf\\ABI Jahr 2027}
@@ -509,6 +513,39 @@ Im folgenden Beispiel wird Alkohol mithilfe des katalyastors $H_3O$(Ein Oxoniumi
             \chemfig{\phantom{Q}-C(-[90])(-[-90])-C(-[90])=C(-[1])(-[7])} \quad+\quad \chemfig{H-\charge{90=\|}{C}^{\oplus}(-[-90]H)-H}
         \schemestop \\[5mm]
         \end{center}
+\end{enumerate}
+
+
+
+\section{Redoxreaktion}
+
+\subsection{Was ist eine Redoxreaktion}
+Eine \textbf{Oxidation} ist definiert als Elektronenabgabe. Der Stoff, der oxidiert wird, ist das \textbf{Reduktionsmittel}.\\\\
+Eine \textbf{Reduktion} ist definiert als Elektronenaufnahmen.Der Stoff, der reduziert wird, ist das \textbf{Oxidationsmittel}\\\\
+Daraus geht hervor, dass zu einer Oxidation immer eine Reduktion gehört. Eine Redoxreaktion ist also eine Elektronenübertragung.\\\\
+
+
+\subsection{Oxidationszahlen}
+Oxidationszahlen dienen dazu zu bestimmen, welcher Bestandteil einer Redoxreaktion oxidiert und welches reduziert wird.\\\\
+
+\paragraph{Oxidationszahlen werden wie folgt bestimmt:}
+\begin{enumerate}
+    \item Lewis Formel notieren
+    \item Elektronenpaarbindungen werden dem Atom der Bindung mit der höheren Elektronegativität zugeordnet
+    \item Oxidationszahl = Anzahl Valenzelektronen - Anzahl aller zugeordneten Elektronen\\\\
+\end{enumerate}
+
+
+\paragraph{Regeln zur Bestimmung der Oxidationszahlen:}
+\begin{enumerate}
+    \item Atome in elementaren Stoffen haben die Oxidationszahl \textbf{0}
+    \item Bei enfachen \textbf{Ionen} entspricht die Oxidationszahl der Ionenladung
+    \item \textbf{Fluor} hat in Verbindungen immer die Oxidationszahl \textbf{-\rom{1}}
+    \item H hat in Verbindungen immer die Oxidationszahl \textbf{\rom{1}}\\
+            Eine Außnahme stellen Hydride dar ($NaH$, $CaH_2$)
+    \item Sauerstoff hat in Verbindungen immer die Oxidationszahl \textbf{-\rom{2}}\\
+            Eine Außnahme bilden Peroxide und Sauerstofffluoride ($H_2O_2$, $OF_2$)
+    \item Die Summe der Oxidationszahlen eines Teilchens entspricht der Gesamtladung des Teilchens.
 \end{enumerate}
 
 
